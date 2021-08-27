@@ -296,6 +296,7 @@ def run_tests():
 def main():
     global args
     global timer_thread
+    os.environ["AMD_LOG_LEVEL"] = "4"
 
     os_detect()
     args = parse_args()
